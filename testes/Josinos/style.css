@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+a{
+    color:#fff;
+    text-decoration: none;
+    height: 170vh;
+}
+.nav-list {
+    list-style: none;
+    display: flex;
+
+}
+.nav-list li{
+    letter-spacing: 2px;
+    margin-left: 32px;
+
+}
+.mobile-menu{
+    display: none;
+    cursor: pointer;
+}
+.mobile-menu div{
+    width: 32px;
+    height: 2px;
+    background-color: #fff;
+    margin: 8px;
+}

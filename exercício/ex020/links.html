@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        body { 
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        a {
+            color: rgb(96, 197, 255);
+            text-decoration: none;
+        }
+        a:visited{
+            color: darkblue;
+        }
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active{
+            color:yellow
+        }
+
+        a::before{
+            content: '>';
+        }
+
+        a::after{
+            content: '[link]';
+            font-weight: lighter;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://cademinhaentrega.com.br/gfl/tracking/P/30605764">Pedido</a></li>
+        <li><a href="https://www.youtube.com/watch?v=vMlrcOVr7po&list=PLHz_AreHm4dlUpEXkY1AyVLQGcpSgVF8s&index=22">Vídeo youtube</a></li>
+        <li><a href="https://blaze.com/pt/games/crash">Blaze</a></li>
+    </ul>
+    
+</body>
+</html>
