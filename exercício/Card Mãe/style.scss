@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&display=swap');
+
+body{
+    font: 18px "Nunito", sans-serif;
+    color: black;
+    min-height: 100vh;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // height: 100px;
+
+    &::before {
+        content: ''; 
+        position: fixed;
+        inset: 0;
+        z-index:-1;
+        pointer-events: none;
+        background: url(bg.jpg) no-repeat center;
+        background-size: cover;
+        animation: backgroundZoomAnimate 20s forwards;
+    }
+}
+
+@keyframes backgroundZoomAnimate {
+    from{
+        transform: scale(1);
+
+    }
+    to{
+        transform: scale(1.3);
+    }
+}
+
+.profile-card {
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    width: 620px;
+    position: relative;
+    backdrop-filter: blur(15px);
+    border: 2px solid #ffffff40;
+    padding: 2rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+
+    @media screen and (max-width:568px){
+        width: auto;
+    }
+
+    &__img img{
+        margin: auto;
+        width: 190px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        display: block;
+        box-shadow: 0 10px 60px -10px rgba(13, 28, 39, .5);
+
+    }
+
+    &__desc {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+
+        h1{
+            font-size: 2.3rem;
+            font-weight: bold;
+
+            & + div {
+                font-size: 18px;
+            }
+        }
+    }
+
+    &__info{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        gap: 24px;
+        font-weight: lighter;
+
+        @media screen and (max-width: 576px) {
+            gap: 8px;
+        }
+
+        & > div{
+            text-transform: uppercase;
+            font-weight: bold;
+            letter-spacing: 1px;
+            text-align: center;
+
+            & > *:first-child{
+                font-weight: bold;
+                letter-spacing: 3px;
+                font-size: 2rem;
+                margin-bottom: 15px;
+            }
+
+            & > *:last-child{
+                font-size: 16px;
+                opacity: .7;
+            }
+        }
+    }
+
+    &__social {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+        a{
+            display: inline-flex;
+            width: 55px;
+            height: 55px;
+            margin: 15px;
+            border-radius: 40%;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+            flex-shrink: 0;
+            transition: all .2s;
+            
+            @media screen and (max-width:768px){
+                width: 50px;
+                height: 50px;
+                margin: 10px;
+            }
+            
+            @media screen and (min-width:768px){
+                &:hover{
+                    transform: scale(1.2) translateY(-5px);
+                }
+
+                &.telefone {
+                    background: linear-gradient(to right, #17853f, #107e39);
+                    box-shadow: 0px 4px 30px rgba(43, 98, 169, .5);
+                }
+                &.email {
+                    background: linear-gradient(#1293d2 , #0e76a8);
+                    box-shadow: 0px 4px 30px rgba(19, 72, 139, .5);
+                }
+                &.instagram {
+                    background: linear-gradient(45deg, #e9b301 10%, #991a44 , #a13f65 , #833ab4, #522174);
+                     box-shadow: 0px 4px 30px rgba(19, 72, 139, .5);
+                } 
+                &.whatsapp {
+                    background: linear-gradient(to right, #25d366, #1bb453);
+                }
+            }
+        }
+
+      &__actions {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 13rem;
+
+        @media screen and (max-width: 576px) {  
+            flex-direction: column;
+            gap: 4rem;
+        }
+
+        &>a>button{
+            font-weight: bold;
+            font-size: 20px;
+            padding: 13px 0px;
+            min-width: 250px;
+            border-radius: 50px;
+            text-align: center;
+            color: white;
+            cursor: pointer;
+            transition: all .2s;
+
+            @media screen and (max-width: 768px){
+                min-width: 170px;
+            }
+            @media screen and (max-width: 576px){
+                min-width: inherit;
+                width: 100px;
+                max-width: 350px;
+            }  
+            @media screen and (min-width:576px) {
+                &:hover {
+                    transform: translateY(-5px);
+                }
+            }
+
+            &.red{
+                background: linear-gradient(45deg, #851a1a, #770606);
+                box-shadow: 0 4px 30px rgba(247, 40, 40, 0.5);
+
+                &:hover{
+                    box-shadow: 0 7px 30px rgba(19, 127, 212, 0.75)
+            }
+            }
+            
+            &.green{
+                background: linear-gradient(45deg, #0b8045, #06832b);
+                &:hover {
+                    box-shadow: 0 7px 30px rgba(223, 45, 70 , 0.75)
+                }
+            }
+        }
+      }    
+    }
