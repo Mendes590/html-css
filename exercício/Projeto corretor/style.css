@@ -39,8 +39,9 @@ main p{
 }
 
 header{
-    background-image: url(foto-fundo.jpg);
+    /* background-image: url(foto-fundo.jpg); */
     background-image: url(mansao2.jgp.jpg);
+    
     background-repeat: no-repeat;
     background-position: center;
     background-size: 600px;
@@ -49,6 +50,7 @@ header{
     padding-top: 100px;
     padding-bottom: 30px;
 }
+
 
 header > h1{
     color: var(--cor4);
@@ -96,7 +98,7 @@ main{
     margin: auto;
     padding: 30px;
     box-shadow: 0px 0px 10px black;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 
 /* main a{} */
