@@ -16,7 +16,7 @@
 
 html, body{
     min-height: 100vh;
-    background-color: darkgray;
+    background-color: rgb(255, 203, 203);
     font-family: var(--fonte1);
 }
 
@@ -30,6 +30,10 @@ section{
 
 section > p{
     padding-bottom: 2em;
+}
+
+.nome{
+    padding-inline: 0px;
 }
 
 section.img01{
@@ -55,10 +59,12 @@ section.img01 > p{
 }
 
 img{
-    border-radius: 200px;
+    border-radius: 300px;
     border: 50px 50px 50px rgb(0, 0, 0);
     border-style: outset black;
     padding: 20px;
+    height: 270px;
+    width: 280px;
 }
 
 section.img02{
@@ -75,7 +81,7 @@ section.img02 > h1{
     font-size: 0.9em;
     font-style: var(--fonte2);
     font-weight: bolder;
-    line-height: 4em;
+    line-height: 2em;
     
 }
 
@@ -86,7 +92,75 @@ section.img02 > p{
 }
 
 section.img03{
+    background-image: url('../imagens/mansao.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
+section.img03 > header{
+    text-align: center;
+}
+
+section.img03 > h2{
+    color: white;
+    text-align: center;
+    font-size: 2.7em;
+}
+
+section.img03 > h3{
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+section.img03 > h4{
+    color: white;
+    text-align: center;
+    font-size: 0.7em;
+}
+
+section.img03 > h5{
+    color: white;
+    text-align: center;
+    font-size: 0.3em;
+}
+
+img.mae{
+    height: 250px;
+    width: 250px;
+    border-radius: 60%;
+    text-align: center;
+    font-display: inherit;
+    padding-left: 40%;
+    padding-right: 40%;
+}
+
+section.img04{
+    background-color: rgb(0, 178, 223);
+
+}
+
+section.img04 > h1{
+    text-align: center;
+    color: white;
+    font-size: 2.5em;
+    margin-top: -60px;
+}
+
+section.img04 > p{
+    color: white;
+    margin-top: 50px;
+
+}
+
+section.img04 > ul> a{
+    text-decoration: underline;
+    font-weight: bolder;
+    color: white;
+    display: list-item;
+    list-style: none;
+    font-size: 2em;
+    width: max-content;
 }
 
 section.imagem > p{
@@ -96,8 +170,82 @@ section.imagem > p{
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.808);
 }
 a{
-    color: rgb(104, 206, 247);
+    color: rgb(0, 204, 255);
     text-decoration: none;
+    padding-inline: 50px;
+    
+    
+}
+
+footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
 }
 
 
+
+
+.profile-card__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (max-width: 768px) {
+    .profile-card a {
+      width: 250px;
+      height: 250px;
+      margin: 20px;
+    }
+  }
+  @media screen {
+    .profile-card a:hover {
+      transform: scale(1.2) translateY(-5px);
+    }
+    .profile-card a.telefone {
+      background: linear-gradient(to right, #17853f, #107e39);
+    }
+    .profile-card a.email {
+      background: linear-gradient(#1293d2, #0e76a8);
+    }
+    .profile-card a.instagram {
+      background: linear-gradient(rgb(250, 67, 67), rgb(253, 68, 68));
+    }
+    .profile-card a.whatsapp {
+      background: linear-gradient(to right, #25d366, #1bb453);
+    }
+  }
+  .section > profile-card__actions {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 28rem;
+  }
+  .section > profile-card__actions > a > button {
+    font-weight: bold;
+    font-size: 47px;
+    padding: 21px 0px;
+    min-width: 450px;
+    border-radius: 60px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  @media screen and (max-width: 768px) {
+    .profile-card__actions > a > button {
+      min-width: 200px;
+    }
+  }
+  @media screen and (min-width: 576px) {
+    .profile-card__actions > a > button:hover {
+      transform: translateY(-5px);
+    }
+  }
+  .profile-card__actions > a > button.green {
+    background: linear-gradient(45deg, #0d7541, #077729);
+  }
+  
