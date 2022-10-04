@@ -20,40 +20,9 @@ html, body{
     font-family: var(--fonte1);
 }
 
-header{
-    background-color: black;
-    color: white;
-    text-align: center;
-    
-}
-
-header > h1{
-    padding-top: 50px;
-    font-variant: small-caps;    
-    font-family: var(--fonte2);
-    font-size: 4em;
-
-}
-
-header > p{
-    padding-bottom: 50px;
-
-}
-
-header a, footer a{
-    color: white;
-    text-decoration: none;
-    font-weight: bolder;
-}
-
-header a:hover, footer a:hover{
-    text-decoration: underline;
-}
-
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
-    line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte3);
     font-size: 2em;
@@ -63,17 +32,61 @@ section > p{
     padding-bottom: 2em;
 }
 
-section.normal{
-    background-color: white;
-    color: black;
-}
-
-section.imagem{
+section.img01{
+    background-image: url('../imagens/bg-novo.webp');
+    font-size: 2.5em;
+    font-display: inherit;
+    text-align: center;
+    padding-top: 200px;
     background-color: rgb(29, 29, 29);
-    color: white;
+    background-position: right bottom;
+    color: rgb(255, 255, 255);
     box-shadow: inset 6px 6px 13px 0px black;
     background-size: cover;
     background-attachment: fixed;
+    height: 70vh;
+}
+
+section.img01 > p{
+    background-color: rgba(0, 0, 0, 0.014);
+    display: inline-block;
+    margin: auto;
+    
+}
+
+img{
+    border-radius: 200px;
+    border: 50px 50px 50px rgb(0, 0, 0);
+    border-style: outset black;
+    padding: 20px;
+}
+
+section.img02{
+    background-color: white;
+    text-align: center;
+    padding-top: 0px;
+    font-size: 2em;
+    
+    
+
+}
+
+section.img02 > h1{
+    font-size: 0.9em;
+    font-style: var(--fonte2);
+    font-weight: bolder;
+    line-height: 4em;
+    
+}
+
+section.img02 > p{
+    font-size: 0.5em;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+section.img03{
+
 }
 
 section.imagem > p{
@@ -82,21 +95,9 @@ section.imagem > p{
     padding: 5px;
     text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.808);
 }
-
-section#img01{
-    background-image: url('../imagens/background001.jpg');
-    background-position: right center;
-    
+a{
+    color: rgb(104, 206, 247);
+    text-decoration: none;
 }
 
-section#img02{
-    background-image: url(../imagens/background002.jpg);
-   
-}
 
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
